@@ -1,0 +1,1342 @@
+2020-01-20 10:39:32 [127.0.0.1][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: yii\web\Request::cookieValidationKey must be configured with a secret key. in C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\web\Request.php:1669
+Stack trace:
+#0 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\web\Request.php(1651): yii\web\Request->loadCookies()
+#1 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\web\User.php(586): yii\web\Request->getCookies()
+#2 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\web\User.php(314): yii\web\User->getIdentityAndDurationFromCookie()
+#3 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\web\User.php(707): yii\web\User->loginByCookie()
+#4 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\web\User.php(192): yii\web\User->renewAuthStatus()
+#5 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\web\User.php(360): yii\web\User->getIdentity()
+#6 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Component.php(139): yii\web\User->getIsGuest()
+#7 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2-debug\src\panels\UserPanel.php(83): yii\base\Component->__get('isGuest')
+#8 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#9 [internal function]: yii\base\BaseObject->__construct(Array)
+#10 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(400): ReflectionClass->newInstanceArgs(Array)
+#11 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(159): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#12 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#13 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2-debug\src\Module.php(247): yii\BaseYii::createObject(Array)
+#14 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2-debug\src\Module.php(218): yii\debug\Module->initPanels()
+#15 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\Module->init()
+#16 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Module.php(158): yii\base\BaseObject->__construct(Array)
+#17 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#18 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(392): ReflectionClass->newInstanceArgs(Array)
+#19 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(159): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#20 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#21 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Module.php(427): yii\BaseYii::createObject(Array, Array)
+#22 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(315): yii\base\Module->getModule('debug')
+#23 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#24 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(273): yii\web\Application->bootstrap()
+#25 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#26 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(206): yii\base\BaseObject->__construct(Array)
+#27 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\web\index.php(12): yii\base\Application->__construct(Array)
+#28 {main}
+2020-01-20 10:39:32 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 YaBrowser/19.12.4.25 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://basic/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'PATH' => 'c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\imagemagick;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\wget\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\database\\MySQL-8.0-x64\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'basic'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic/web/index.php'
+    'REMOTE_PORT' => '13270'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1579505971.904
+    'REQUEST_TIME' => 1579505971
+    'argv' => []
+    'argc' => 0
+]
+2020-01-20 10:39:51 [127.0.0.1][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: yii\web\Request::cookieValidationKey must be configured with a secret key. in C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\web\Request.php:1669
+Stack trace:
+#0 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\web\Request.php(1651): yii\web\Request->loadCookies()
+#1 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\web\User.php(586): yii\web\Request->getCookies()
+#2 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\web\User.php(314): yii\web\User->getIdentityAndDurationFromCookie()
+#3 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\web\User.php(707): yii\web\User->loginByCookie()
+#4 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\web\User.php(192): yii\web\User->renewAuthStatus()
+#5 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\web\User.php(360): yii\web\User->getIdentity()
+#6 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Component.php(139): yii\web\User->getIsGuest()
+#7 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2-debug\src\panels\UserPanel.php(83): yii\base\Component->__get('isGuest')
+#8 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#9 [internal function]: yii\base\BaseObject->__construct(Array)
+#10 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(400): ReflectionClass->newInstanceArgs(Array)
+#11 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(159): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#12 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#13 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2-debug\src\Module.php(247): yii\BaseYii::createObject(Array)
+#14 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2-debug\src\Module.php(218): yii\debug\Module->initPanels()
+#15 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\Module->init()
+#16 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Module.php(158): yii\base\BaseObject->__construct(Array)
+#17 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#18 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(392): ReflectionClass->newInstanceArgs(Array)
+#19 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(159): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#20 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#21 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Module.php(427): yii\BaseYii::createObject(Array, Array)
+#22 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(315): yii\base\Module->getModule('debug')
+#23 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#24 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(273): yii\web\Application->bootstrap()
+#25 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#26 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(206): yii\base\BaseObject->__construct(Array)
+#27 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\web\index.php(12): yii\base\Application->__construct(Array)
+#28 {main}
+2020-01-20 10:39:51 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 YaBrowser/19.12.4.25 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://basic/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'PATH' => 'c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\imagemagick;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\wget\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\database\\MySQL-8.0-x64\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'basic'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic/web/index.php'
+    'REMOTE_PORT' => '13284'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1579505991.228
+    'REQUEST_TIME' => 1579505991
+    'argv' => []
+    'argc' => 0
+]
+2020-01-20 10:45:10 [127.0.0.1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: session_set_cookie_params(): Cannot change session cookie parameters when headers already sent in C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\web\Session.php:399
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'session_set_coo...', 'C:\\Users\\chupr\\...', 399, Array)
+#1 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\web\Session.php(399): session_set_cookie_params(Array)
+#2 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\web\Session.php(135): yii\web\Session->setCookieParamsInternal()
+#3 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\web\Session.php(630): yii\web\Session->open()
+#4 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\web\Session.php(769): yii\web\Session->get('__flash', Array)
+#5 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\widgets\Alert.php(53): yii\web\Session->getAllFlashes()
+#6 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Widget.php(140): app\widgets\Alert->run()
+#7 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\views\layouts\main.php(65): yii\base\Widget::widget()
+#8 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\View.php(348): require('C:\\Users\\chupr\\...')
+#9 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\Users\\chupr\\...', Array)
+#10 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Controller.php(401): yii\base\View->renderFile('C:\\Users\\chupr\\...', Array, Object(app\controllers\SiteController))
+#11 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Controller.php(387): yii\base\Controller->renderContent('<div class="sit...')
+#12 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\controllers\SiteController.php(64): yii\base\Controller->render('index')
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#17 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#18 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\web\index.php(12): yii\base\Application->run()
+#20 {main}
+2020-01-20 10:45:09 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 YaBrowser/19.12.4.25 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://basic/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'PATH' => 'c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\imagemagick;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\wget\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\database\\MySQL-8.0-x64\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'basic'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic/web/index.php'
+    'REMOTE_PORT' => '13471'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1579506309.688
+    'REQUEST_TIME' => 1579506309
+    'argv' => []
+    'argc' => 0
+]
+2020-01-20 11:00:37 [127.0.0.1][-][mahm15gdr8scjcflgn4evhq0gj777mv8][error][ParseError] ParseError: syntax error, unexpected ''Мой питомец'' (T_CONSTANT_ENCAPSED_STRING), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\views\layouts\main.php:35
+Stack trace:
+#0 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\Users\\chupr\\...', Array)
+#1 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Controller.php(401): yii\base\View->renderFile('C:\\Users\\chupr\\...', Array, Object(app\controllers\SiteController))
+#2 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Controller.php(387): yii\base\Controller->renderContent('<div class="sit...')
+#3 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\controllers\SiteController.php(64): yii\base\Controller->render('index')
+#4 [internal function]: app\controllers\SiteController->actionIndex()
+#5 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#8 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#9 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\web\index.php(12): yii\base\Application->run()
+#11 {main}
+2020-01-20 11:00:37 [127.0.0.1][-][mahm15gdr8scjcflgn4evhq0gj777mv8][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'mahm15gdr8scjcflgn4evhq0gj777mv8'
+    '_csrf' => '076159f3a9c9347e7bd8216383d635030419be3bc7cc5ded4874a2ef4b96c3e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"AI7forRlAOjaXjAx9TfIZde_fKTVITXH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 YaBrowser/19.12.4.25 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://basic/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=mahm15gdr8scjcflgn4evhq0gj777mv8; _csrf=076159f3a9c9347e7bd8216383d635030419be3bc7cc5ded4874a2ef4b96c3e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22AI7forRlAOjaXjAx9TfIZde_fKTVITXH%22%3B%7D'
+    'PATH' => 'c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\imagemagick;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\wget\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\database\\MySQL-8.0-x64\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'basic'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic/web/index.php'
+    'REMOTE_PORT' => '14116'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/index.php'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1579507237.448
+    'REQUEST_TIME' => 1579507237
+    'argv' => []
+    'argc' => 0
+]
+2020-01-20 11:00:41 [127.0.0.1][-][mahm15gdr8scjcflgn4evhq0gj777mv8][error][ParseError] ParseError: syntax error, unexpected ''Мой питомец'' (T_CONSTANT_ENCAPSED_STRING), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\views\layouts\main.php:35
+Stack trace:
+#0 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\Users\\chupr\\...', Array)
+#1 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Controller.php(401): yii\base\View->renderFile('C:\\Users\\chupr\\...', Array, Object(app\controllers\SiteController))
+#2 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Controller.php(387): yii\base\Controller->renderContent('<div class="sit...')
+#3 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\controllers\SiteController.php(85): yii\base\Controller->render('login', Array)
+#4 [internal function]: app\controllers\SiteController->actionLogin()
+#5 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('login', Array)
+#8 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#9 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\web\index.php(12): yii\base\Application->run()
+#11 {main}
+2020-01-20 11:00:40 [127.0.0.1][-][mahm15gdr8scjcflgn4evhq0gj777mv8][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'mahm15gdr8scjcflgn4evhq0gj777mv8'
+    '_csrf' => '076159f3a9c9347e7bd8216383d635030419be3bc7cc5ded4874a2ef4b96c3e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"AI7forRlAOjaXjAx9TfIZde_fKTVITXH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 YaBrowser/19.12.4.25 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://basic/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=mahm15gdr8scjcflgn4evhq0gj777mv8; _csrf=076159f3a9c9347e7bd8216383d635030419be3bc7cc5ded4874a2ef4b96c3e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22AI7forRlAOjaXjAx9TfIZde_fKTVITXH%22%3B%7D'
+    'PATH' => 'c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\imagemagick;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\wget\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\database\\MySQL-8.0-x64\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'basic'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic/web/index.php'
+    'REMOTE_PORT' => '14117'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1579507240.208
+    'REQUEST_TIME' => 1579507240
+    'argv' => [
+        0 => 'r=site%2Flogin'
+    ]
+    'argc' => 1
+]
+2020-01-20 11:43:52 [127.0.0.1][-][mahm15gdr8scjcflgn4evhq0gj777mv8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "Pet/index". in C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('Pet/index', Array)
+#1 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2020-01-20 11:43:52 [127.0.0.1][-][mahm15gdr8scjcflgn4evhq0gj777mv8][info][application] $_GET = [
+    'r' => 'Pet/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'mahm15gdr8scjcflgn4evhq0gj777mv8'
+    '_csrf' => '076159f3a9c9347e7bd8216383d635030419be3bc7cc5ded4874a2ef4b96c3e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"AI7forRlAOjaXjAx9TfIZde_fKTVITXH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 YaBrowser/19.12.4.25 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://basic/web/index.php?'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=mahm15gdr8scjcflgn4evhq0gj777mv8; _csrf=076159f3a9c9347e7bd8216383d635030419be3bc7cc5ded4874a2ef4b96c3e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22AI7forRlAOjaXjAx9TfIZde_fKTVITXH%22%3B%7D'
+    'PATH' => 'c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\imagemagick;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\wget\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\database\\MySQL-8.0-x64\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'basic'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic/web/index.php'
+    'REMOTE_PORT' => '15520'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=Pet%2Findex'
+    'REQUEST_URI' => '/web/index.php?r=Pet%2Findex'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1579509832.145
+    'REQUEST_TIME' => 1579509832
+    'argv' => [
+        0 => 'r=Pet%2Findex'
+    ]
+    'argc' => 1
+]
+2020-01-20 11:43:56 [127.0.0.1][-][mahm15gdr8scjcflgn4evhq0gj777mv8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "Owner/index". in C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('Owner/index', Array)
+#1 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2020-01-20 11:43:55 [127.0.0.1][-][mahm15gdr8scjcflgn4evhq0gj777mv8][info][application] $_GET = [
+    'r' => 'Owner/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'mahm15gdr8scjcflgn4evhq0gj777mv8'
+    '_csrf' => '076159f3a9c9347e7bd8216383d635030419be3bc7cc5ded4874a2ef4b96c3e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"AI7forRlAOjaXjAx9TfIZde_fKTVITXH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 YaBrowser/19.12.4.25 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://basic/web/index.php?'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=mahm15gdr8scjcflgn4evhq0gj777mv8; _csrf=076159f3a9c9347e7bd8216383d635030419be3bc7cc5ded4874a2ef4b96c3e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22AI7forRlAOjaXjAx9TfIZde_fKTVITXH%22%3B%7D'
+    'PATH' => 'c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\imagemagick;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\wget\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\database\\MySQL-8.0-x64\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'basic'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic/web/index.php'
+    'REMOTE_PORT' => '15519'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=Owner%2Findex'
+    'REQUEST_URI' => '/web/index.php?r=Owner%2Findex'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1579509835.797
+    'REQUEST_TIME' => 1579509835
+    'argv' => [
+        0 => 'r=Owner%2Findex'
+    ]
+    'argc' => 1
+]
+2020-01-20 11:54:27 [127.0.0.1][-][mahm15gdr8scjcflgn4evhq0gj777mv8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "sity/index". in C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('sity/index', Array)
+#1 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2020-01-20 11:54:27 [127.0.0.1][-][mahm15gdr8scjcflgn4evhq0gj777mv8][info][application] $_GET = [
+    'r' => 'sity/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'mahm15gdr8scjcflgn4evhq0gj777mv8'
+    '_csrf' => '076159f3a9c9347e7bd8216383d635030419be3bc7cc5ded4874a2ef4b96c3e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"AI7forRlAOjaXjAx9TfIZde_fKTVITXH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 YaBrowser/19.12.4.25 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://basic/web/index.php?r=site%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=mahm15gdr8scjcflgn4evhq0gj777mv8; _csrf=076159f3a9c9347e7bd8216383d635030419be3bc7cc5ded4874a2ef4b96c3e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22AI7forRlAOjaXjAx9TfIZde_fKTVITXH%22%3B%7D'
+    'PATH' => 'c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\imagemagick;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\wget\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\database\\MySQL-8.0-x64\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'basic'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic/web/index.php'
+    'REMOTE_PORT' => '15912'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=sity%2Findex'
+    'REQUEST_URI' => '/web/index.php?r=sity%2Findex'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1579510466.958
+    'REQUEST_TIME' => 1579510466
+    'argv' => [
+        0 => 'r=sity%2Findex'
+    ]
+    'argc' => 1
+]
+2020-01-20 11:54:39 [127.0.0.1][-][mahm15gdr8scjcflgn4evhq0gj777mv8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "sity/index". in C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('sity/index', Array)
+#1 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2020-01-20 11:54:39 [127.0.0.1][-][mahm15gdr8scjcflgn4evhq0gj777mv8][info][application] $_GET = [
+    'r' => 'sity/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'mahm15gdr8scjcflgn4evhq0gj777mv8'
+    '_csrf' => '076159f3a9c9347e7bd8216383d635030419be3bc7cc5ded4874a2ef4b96c3e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"AI7forRlAOjaXjAx9TfIZde_fKTVITXH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 YaBrowser/19.12.4.25 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://basic/web/index.php?r=site%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=mahm15gdr8scjcflgn4evhq0gj777mv8; _csrf=076159f3a9c9347e7bd8216383d635030419be3bc7cc5ded4874a2ef4b96c3e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22AI7forRlAOjaXjAx9TfIZde_fKTVITXH%22%3B%7D'
+    'PATH' => 'c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\imagemagick;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\wget\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\database\\MySQL-8.0-x64\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'basic'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic/web/index.php'
+    'REMOTE_PORT' => '15912'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=sity%2Findex'
+    'REQUEST_URI' => '/web/index.php?r=sity%2Findex'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1579510479.043
+    'REQUEST_TIME' => 1579510479
+    'argv' => [
+        0 => 'r=sity%2Findex'
+    ]
+    'argc' => 1
+]
+2020-01-20 13:26:48 [127.0.0.1][-][mahm15gdr8scjcflgn4evhq0gj777mv8][error][yii\base\InvalidArgumentException] yii\base\InvalidArgumentException: Relation names are case sensitive. app\models\OwnerSearch has a relation named "iDpet" instead of "IDpet". in C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\db\ActiveRelationTrait.php:182
+Stack trace:
+#0 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\db\BaseActiveRecord.php(301): yii\db\ActiveQuery->findFor('IDpet', Object(app\models\OwnerSearch))
+#1 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\validators\Validator.php(254): yii\db\BaseActiveRecord->__get('IDpet')
+#2 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(app\models\OwnerSearch), Array)
+#3 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\models\OwnerSearch.php(53): yii\base\Model->validate()
+#4 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\controllers\OwnerController.php(39): app\models\OwnerSearch->search(Array)
+#5 [internal function]: app\controllers\OwnerController->actionIndex()
+#6 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#9 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('owner/index', Array)
+#10 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\web\index.php(12): yii\base\Application->run()
+#12 {main}
+2020-01-20 13:26:47 [127.0.0.1][-][mahm15gdr8scjcflgn4evhq0gj777mv8][info][application] $_GET = [
+    'r' => 'owner/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'mahm15gdr8scjcflgn4evhq0gj777mv8'
+    '_csrf' => '076159f3a9c9347e7bd8216383d635030419be3bc7cc5ded4874a2ef4b96c3e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"AI7forRlAOjaXjAx9TfIZde_fKTVITXH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 YaBrowser/19.12.4.25 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://basic/web/index.php?r=pet%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=mahm15gdr8scjcflgn4evhq0gj777mv8; _csrf=076159f3a9c9347e7bd8216383d635030419be3bc7cc5ded4874a2ef4b96c3e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22AI7forRlAOjaXjAx9TfIZde_fKTVITXH%22%3B%7D'
+    'PATH' => 'c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\imagemagick;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\wget\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\database\\MySQL-8.0-x64\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'basic'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic/web/index.php'
+    'REMOTE_PORT' => '20067'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=owner%2Findex'
+    'REQUEST_URI' => '/web/index.php?r=owner%2Findex'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1579516007.192
+    'REQUEST_TIME' => 1579516007
+    'argv' => [
+        0 => 'r=owner%2Findex'
+    ]
+    'argc' => 1
+]
+2020-01-20 13:26:58 [127.0.0.1][-][mahm15gdr8scjcflgn4evhq0gj777mv8][error][yii\base\InvalidArgumentException] yii\base\InvalidArgumentException: Relation names are case sensitive. app\models\OwnerSearch has a relation named "iDpet" instead of "IDpet". in C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\db\ActiveRelationTrait.php:182
+Stack trace:
+#0 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\db\BaseActiveRecord.php(301): yii\db\ActiveQuery->findFor('IDpet', Object(app\models\OwnerSearch))
+#1 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\validators\Validator.php(254): yii\db\BaseActiveRecord->__get('IDpet')
+#2 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(app\models\OwnerSearch), Array)
+#3 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\models\OwnerSearch.php(53): yii\base\Model->validate()
+#4 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\controllers\OwnerController.php(39): app\models\OwnerSearch->search(Array)
+#5 [internal function]: app\controllers\OwnerController->actionIndex()
+#6 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#9 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('owner/index', Array)
+#10 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\web\index.php(12): yii\base\Application->run()
+#12 {main}
+2020-01-20 13:26:58 [127.0.0.1][-][mahm15gdr8scjcflgn4evhq0gj777mv8][info][application] $_GET = [
+    'r' => 'owner/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'mahm15gdr8scjcflgn4evhq0gj777mv8'
+    '_csrf' => '076159f3a9c9347e7bd8216383d635030419be3bc7cc5ded4874a2ef4b96c3e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"AI7forRlAOjaXjAx9TfIZde_fKTVITXH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 YaBrowser/19.12.4.25 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://basic/web/index.php?r=pet%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=mahm15gdr8scjcflgn4evhq0gj777mv8; _csrf=076159f3a9c9347e7bd8216383d635030419be3bc7cc5ded4874a2ef4b96c3e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22AI7forRlAOjaXjAx9TfIZde_fKTVITXH%22%3B%7D'
+    'PATH' => 'c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\imagemagick;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\wget\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\database\\MySQL-8.0-x64\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'basic'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic/web/index.php'
+    'REMOTE_PORT' => '20073'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=owner%2Findex'
+    'REQUEST_URI' => '/web/index.php?r=owner%2Findex'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1579516018.343
+    'REQUEST_TIME' => 1579516018
+    'argv' => [
+        0 => 'r=owner%2Findex'
+    ]
+    'argc' => 1
+]
+2020-01-20 13:31:48 [127.0.0.1][-][mahm15gdr8scjcflgn4evhq0gj777mv8][error][yii\base\InvalidArgumentException] yii\base\InvalidArgumentException: Relation names are case sensitive. app\models\OwnerSearch has a relation named "iDpet" instead of "IDpet". in C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\db\ActiveRelationTrait.php:182
+Stack trace:
+#0 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\db\BaseActiveRecord.php(301): yii\db\ActiveQuery->findFor('IDpet', Object(app\models\OwnerSearch))
+#1 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\validators\Validator.php(254): yii\db\BaseActiveRecord->__get('IDpet')
+#2 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(app\models\OwnerSearch), Array)
+#3 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\models\OwnerSearch.php(53): yii\base\Model->validate()
+#4 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\controllers\OwnerController.php(39): app\models\OwnerSearch->search(Array)
+#5 [internal function]: app\controllers\OwnerController->actionIndex()
+#6 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#9 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('owner/index', Array)
+#10 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\web\index.php(12): yii\base\Application->run()
+#12 {main}
+2020-01-20 13:31:48 [127.0.0.1][-][mahm15gdr8scjcflgn4evhq0gj777mv8][info][application] $_GET = [
+    'r' => 'owner/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'mahm15gdr8scjcflgn4evhq0gj777mv8'
+    '_csrf' => '076159f3a9c9347e7bd8216383d635030419be3bc7cc5ded4874a2ef4b96c3e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"AI7forRlAOjaXjAx9TfIZde_fKTVITXH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 YaBrowser/19.12.4.25 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://basic/web/index.php?r=city%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=mahm15gdr8scjcflgn4evhq0gj777mv8; _csrf=076159f3a9c9347e7bd8216383d635030419be3bc7cc5ded4874a2ef4b96c3e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22AI7forRlAOjaXjAx9TfIZde_fKTVITXH%22%3B%7D'
+    'PATH' => 'c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\imagemagick;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\wget\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\database\\MySQL-8.0-x64\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'basic'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic/web/index.php'
+    'REMOTE_PORT' => '20229'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=owner%2Findex'
+    'REQUEST_URI' => '/web/index.php?r=owner%2Findex'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1579516308.236
+    'REQUEST_TIME' => 1579516308
+    'argv' => [
+        0 => 'r=owner%2Findex'
+    ]
+    'argc' => 1
+]
+2020-01-20 13:37:51 [127.0.0.1][-][mahm15gdr8scjcflgn4evhq0gj777mv8][error][yii\base\InvalidArgumentException] yii\base\InvalidArgumentException: Relation names are case sensitive. app\models\OwnerSearch has a relation named "iDpet" instead of "IDpet". in C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\db\ActiveRelationTrait.php:182
+Stack trace:
+#0 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\db\BaseActiveRecord.php(301): yii\db\ActiveQuery->findFor('IDpet', Object(app\models\OwnerSearch))
+#1 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\validators\Validator.php(254): yii\db\BaseActiveRecord->__get('IDpet')
+#2 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(app\models\OwnerSearch), Array)
+#3 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\models\OwnerSearch.php(53): yii\base\Model->validate()
+#4 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\controllers\OwnerController.php(39): app\models\OwnerSearch->search(Array)
+#5 [internal function]: app\controllers\OwnerController->actionIndex()
+#6 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#9 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('owner/index', Array)
+#10 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\web\index.php(12): yii\base\Application->run()
+#12 {main}
+2020-01-20 13:37:51 [127.0.0.1][-][mahm15gdr8scjcflgn4evhq0gj777mv8][info][application] $_GET = [
+    'r' => 'owner/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'mahm15gdr8scjcflgn4evhq0gj777mv8'
+    '_csrf' => '076159f3a9c9347e7bd8216383d635030419be3bc7cc5ded4874a2ef4b96c3e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"AI7forRlAOjaXjAx9TfIZde_fKTVITXH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 YaBrowser/19.12.4.25 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://basic/web/index.php?r=city%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=mahm15gdr8scjcflgn4evhq0gj777mv8; _csrf=076159f3a9c9347e7bd8216383d635030419be3bc7cc5ded4874a2ef4b96c3e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22AI7forRlAOjaXjAx9TfIZde_fKTVITXH%22%3B%7D'
+    'PATH' => 'c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\imagemagick;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\wget\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\database\\MySQL-8.0-x64\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'basic'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic/web/index.php'
+    'REMOTE_PORT' => '20394'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=owner%2Findex'
+    'REQUEST_URI' => '/web/index.php?r=owner%2Findex'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1579516671.009
+    'REQUEST_TIME' => 1579516671
+    'argv' => [
+        0 => 'r=owner%2Findex'
+    ]
+    'argc' => 1
+]
+2020-01-20 13:40:32 [127.0.0.1][-][mahm15gdr8scjcflgn4evhq0gj777mv8][error][yii\base\InvalidArgumentException] yii\base\InvalidArgumentException: Relation names are case sensitive. app\models\OwnerSearch has a relation named "iDpet" instead of "IDpet". in C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\db\ActiveRelationTrait.php:182
+Stack trace:
+#0 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\db\BaseActiveRecord.php(301): yii\db\ActiveQuery->findFor('IDpet', Object(app\models\OwnerSearch))
+#1 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\validators\Validator.php(254): yii\db\BaseActiveRecord->__get('IDpet')
+#2 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(app\models\OwnerSearch), Array)
+#3 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\models\OwnerSearch.php(53): yii\base\Model->validate()
+#4 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\controllers\OwnerController.php(39): app\models\OwnerSearch->search(Array)
+#5 [internal function]: app\controllers\OwnerController->actionIndex()
+#6 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#9 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('owner/index', Array)
+#10 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\web\index.php(12): yii\base\Application->run()
+#12 {main}
+2020-01-20 13:40:31 [127.0.0.1][-][mahm15gdr8scjcflgn4evhq0gj777mv8][info][application] $_GET = [
+    'r' => 'owner/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'mahm15gdr8scjcflgn4evhq0gj777mv8'
+    '_csrf' => '076159f3a9c9347e7bd8216383d635030419be3bc7cc5ded4874a2ef4b96c3e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"AI7forRlAOjaXjAx9TfIZde_fKTVITXH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 YaBrowser/19.12.4.25 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://basic/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=mahm15gdr8scjcflgn4evhq0gj777mv8; _csrf=076159f3a9c9347e7bd8216383d635030419be3bc7cc5ded4874a2ef4b96c3e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22AI7forRlAOjaXjAx9TfIZde_fKTVITXH%22%3B%7D'
+    'PATH' => 'c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\imagemagick;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\wget\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\database\\MySQL-8.0-x64\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'basic'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic/web/index.php'
+    'REMOTE_PORT' => '20460'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=owner%2Findex'
+    'REQUEST_URI' => '/web/index.php?r=owner%2Findex'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1579516831.888
+    'REQUEST_TIME' => 1579516831
+    'argv' => [
+        0 => 'r=owner%2Findex'
+    ]
+    'argc' => 1
+]
+2020-01-20 13:42:48 [127.0.0.1][-][mahm15gdr8scjcflgn4evhq0gj777mv8][error][yii\base\InvalidArgumentException] yii\base\InvalidArgumentException: Relation names are case sensitive. app\models\OwnerSearch has a relation named "iDpet" instead of "IDpet". in C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\db\ActiveRelationTrait.php:182
+Stack trace:
+#0 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\db\BaseActiveRecord.php(301): yii\db\ActiveQuery->findFor('IDpet', Object(app\models\OwnerSearch))
+#1 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Model.php(1026): yii\db\BaseActiveRecord->__get('IDpet')
+#2 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\db\ActiveRelationTrait.php(526): yii\base\Model->offsetGet('IDpet')
+#3 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\db\ActiveQuery.php(196): yii\db\ActiveQuery->filterByModels(Array)
+#4 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\db\QueryBuilder.php(227): yii\db\ActiveQuery->prepare(Object(yii\db\mysql\QueryBuilder))
+#5 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\db\ActiveQuery.php(328): yii\db\QueryBuilder->build(Object(yii\db\ActiveQuery))
+#6 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\db\Query.php(274): yii\db\ActiveQuery->createCommand(Object(yii\db\Connection))
+#7 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\db\ActiveQuery.php(304): yii\db\Query->one(NULL)
+#8 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\db\ActiveRelationTrait.php(186): yii\db\ActiveQuery->one()
+#9 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\db\BaseActiveRecord.php(301): yii\db\ActiveQuery->findFor('iDpet', Object(app\models\OwnerSearch))
+#10 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\validators\Validator.php(254): yii\db\BaseActiveRecord->__get('iDpet')
+#11 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(app\models\OwnerSearch), Array)
+#12 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\models\OwnerSearch.php(53): yii\base\Model->validate()
+#13 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\controllers\OwnerController.php(39): app\models\OwnerSearch->search(Array)
+#14 [internal function]: app\controllers\OwnerController->actionIndex()
+#15 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#16 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#17 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#18 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('owner/index', Array)
+#19 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\web\index.php(12): yii\base\Application->run()
+#21 {main}
+2020-01-20 13:42:48 [127.0.0.1][-][mahm15gdr8scjcflgn4evhq0gj777mv8][info][application] $_GET = [
+    'r' => 'owner/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'mahm15gdr8scjcflgn4evhq0gj777mv8'
+    '_csrf' => '076159f3a9c9347e7bd8216383d635030419be3bc7cc5ded4874a2ef4b96c3e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"AI7forRlAOjaXjAx9TfIZde_fKTVITXH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 YaBrowser/19.12.4.25 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://basic/web/index.php?r=pet%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=mahm15gdr8scjcflgn4evhq0gj777mv8; _csrf=076159f3a9c9347e7bd8216383d635030419be3bc7cc5ded4874a2ef4b96c3e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22AI7forRlAOjaXjAx9TfIZde_fKTVITXH%22%3B%7D'
+    'PATH' => 'c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\imagemagick;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\wget\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\database\\MySQL-8.0-x64\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'basic'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic/web/index.php'
+    'REMOTE_PORT' => '20526'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=owner%2Findex'
+    'REQUEST_URI' => '/web/index.php?r=owner%2Findex'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1579516968.243
+    'REQUEST_TIME' => 1579516968
+    'argv' => [
+        0 => 'r=owner%2Findex'
+    ]
+    'argc' => 1
+]
+2020-01-20 13:43:09 [127.0.0.1][-][mahm15gdr8scjcflgn4evhq0gj777mv8][error][yii\base\InvalidArgumentException] yii\base\InvalidArgumentException: Relation names are case sensitive. app\models\OwnerSearch has a relation named "iDpet" instead of "IDpet". in C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\db\ActiveRelationTrait.php:182
+Stack trace:
+#0 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\db\BaseActiveRecord.php(301): yii\db\ActiveQuery->findFor('IDpet', Object(app\models\OwnerSearch))
+#1 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Model.php(1026): yii\db\BaseActiveRecord->__get('IDpet')
+#2 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\db\ActiveRelationTrait.php(526): yii\base\Model->offsetGet('IDpet')
+#3 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\db\ActiveQuery.php(196): yii\db\ActiveQuery->filterByModels(Array)
+#4 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\db\QueryBuilder.php(227): yii\db\ActiveQuery->prepare(Object(yii\db\mysql\QueryBuilder))
+#5 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\db\ActiveQuery.php(328): yii\db\QueryBuilder->build(Object(yii\db\ActiveQuery))
+#6 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\db\Query.php(274): yii\db\ActiveQuery->createCommand(Object(yii\db\Connection))
+#7 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\db\ActiveQuery.php(304): yii\db\Query->one(NULL)
+#8 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\db\ActiveRelationTrait.php(186): yii\db\ActiveQuery->one()
+#9 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\db\BaseActiveRecord.php(301): yii\db\ActiveQuery->findFor('iDpet', Object(app\models\OwnerSearch))
+#10 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\validators\Validator.php(254): yii\db\BaseActiveRecord->__get('iDpet')
+#11 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(app\models\OwnerSearch), Array)
+#12 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\models\OwnerSearch.php(53): yii\base\Model->validate()
+#13 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\controllers\OwnerController.php(39): app\models\OwnerSearch->search(Array)
+#14 [internal function]: app\controllers\OwnerController->actionIndex()
+#15 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#16 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#17 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#18 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('owner/index', Array)
+#19 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\web\index.php(12): yii\base\Application->run()
+#21 {main}
+2020-01-20 13:43:09 [127.0.0.1][-][mahm15gdr8scjcflgn4evhq0gj777mv8][info][application] $_GET = [
+    'r' => 'owner/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'mahm15gdr8scjcflgn4evhq0gj777mv8'
+    '_csrf' => '076159f3a9c9347e7bd8216383d635030419be3bc7cc5ded4874a2ef4b96c3e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"AI7forRlAOjaXjAx9TfIZde_fKTVITXH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 YaBrowser/19.12.4.25 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://basic/web/index.php?r=pet%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=mahm15gdr8scjcflgn4evhq0gj777mv8; _csrf=076159f3a9c9347e7bd8216383d635030419be3bc7cc5ded4874a2ef4b96c3e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22AI7forRlAOjaXjAx9TfIZde_fKTVITXH%22%3B%7D'
+    'PATH' => 'c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\imagemagick;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\wget\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\database\\MySQL-8.0-x64\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'basic'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic/web/index.php'
+    'REMOTE_PORT' => '20544'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=owner%2Findex'
+    'REQUEST_URI' => '/web/index.php?r=owner%2Findex'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1579516989.542
+    'REQUEST_TIME' => 1579516989
+    'argv' => [
+        0 => 'r=owner%2Findex'
+    ]
+    'argc' => 1
+]
+2020-01-20 13:43:48 [127.0.0.1][-][mahm15gdr8scjcflgn4evhq0gj777mv8][error][yii\base\InvalidArgumentException] yii\base\InvalidArgumentException: Relation names are case sensitive. app\models\OwnerSearch has a relation named "iDpet" instead of "IDpet". in C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\db\ActiveRelationTrait.php:182
+Stack trace:
+#0 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\db\BaseActiveRecord.php(301): yii\db\ActiveQuery->findFor('IDpet', Object(app\models\OwnerSearch))
+#1 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\validators\Validator.php(254): yii\db\BaseActiveRecord->__get('IDpet')
+#2 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(app\models\OwnerSearch), Array)
+#3 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\models\OwnerSearch.php(53): yii\base\Model->validate()
+#4 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\controllers\OwnerController.php(39): app\models\OwnerSearch->search(Array)
+#5 [internal function]: app\controllers\OwnerController->actionIndex()
+#6 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#9 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('owner/index', Array)
+#10 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\web\index.php(12): yii\base\Application->run()
+#12 {main}
+2020-01-20 13:43:48 [127.0.0.1][-][mahm15gdr8scjcflgn4evhq0gj777mv8][info][application] $_GET = [
+    'r' => 'owner/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'mahm15gdr8scjcflgn4evhq0gj777mv8'
+    '_csrf' => '076159f3a9c9347e7bd8216383d635030419be3bc7cc5ded4874a2ef4b96c3e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"AI7forRlAOjaXjAx9TfIZde_fKTVITXH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 YaBrowser/19.12.4.25 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://basic/web/index.php?r=pet%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=mahm15gdr8scjcflgn4evhq0gj777mv8; _csrf=076159f3a9c9347e7bd8216383d635030419be3bc7cc5ded4874a2ef4b96c3e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22AI7forRlAOjaXjAx9TfIZde_fKTVITXH%22%3B%7D'
+    'PATH' => 'c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\imagemagick;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\wget\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\database\\MySQL-8.0-x64\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'basic'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic/web/index.php'
+    'REMOTE_PORT' => '20562'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=owner%2Findex'
+    'REQUEST_URI' => '/web/index.php?r=owner%2Findex'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1579517028.394
+    'REQUEST_TIME' => 1579517028
+    'argv' => [
+        0 => 'r=owner%2Findex'
+    ]
+    'argc' => 1
+]
+2020-01-20 13:45:46 [127.0.0.1][-][mahm15gdr8scjcflgn4evhq0gj777mv8][error][yii\base\InvalidArgumentException] yii\base\InvalidArgumentException: Relation names are case sensitive. app\models\OwnerSearch has a relation named "iDpet" instead of "IDpet". in C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\db\ActiveRelationTrait.php:182
+Stack trace:
+#0 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\db\BaseActiveRecord.php(301): yii\db\ActiveQuery->findFor('IDpet', Object(app\models\OwnerSearch))
+#1 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\validators\Validator.php(254): yii\db\BaseActiveRecord->__get('IDpet')
+#2 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(app\models\OwnerSearch), Array)
+#3 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\models\OwnerSearch.php(53): yii\base\Model->validate()
+#4 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\controllers\OwnerController.php(39): app\models\OwnerSearch->search(Array)
+#5 [internal function]: app\controllers\OwnerController->actionIndex()
+#6 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#9 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('owner/index', Array)
+#10 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\Users\chupr\Desktop\OSP_arch\OSpanel\domains\basic\web\index.php(12): yii\base\Application->run()
+#12 {main}
+2020-01-20 13:45:45 [127.0.0.1][-][mahm15gdr8scjcflgn4evhq0gj777mv8][info][application] $_GET = [
+    'r' => 'owner/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'mahm15gdr8scjcflgn4evhq0gj777mv8'
+    '_csrf' => '076159f3a9c9347e7bd8216383d635030419be3bc7cc5ded4874a2ef4b96c3e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"AI7forRlAOjaXjAx9TfIZde_fKTVITXH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 YaBrowser/19.12.4.25 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://basic/web/index.php?r=pet%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=mahm15gdr8scjcflgn4evhq0gj777mv8; _csrf=076159f3a9c9347e7bd8216383d635030419be3bc7cc5ded4874a2ef4b96c3e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22AI7forRlAOjaXjAx9TfIZde_fKTVITXH%22%3B%7D'
+    'PATH' => 'c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\ext;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\pear;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\php\\PHP_7.3-x64;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\imagemagick;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\wget\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\database\\MySQL-8.0-x64\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\users\\chupr\\desktop\\osp_arch\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'basic'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/Users/chupr/Desktop/OSP_arch/OSpanel/domains/basic/web/index.php'
+    'REMOTE_PORT' => '20618'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=owner%2Findex'
+    'REQUEST_URI' => '/web/index.php?r=owner%2Findex'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1579517145.469
+    'REQUEST_TIME' => 1579517145
+    'argv' => [
+        0 => 'r=owner%2Findex'
+    ]
+    'argc' => 1
+]
